@@ -1,0 +1,16 @@
+{ "albums": [{
+    "name": "Peony",
+    "color": "pink",
+    "mood": "calm",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Paeonia_suffruticosa_cv3.jpg",
+    "season": ["April", "May", "June"],
+    "id": "1"
+    }, {
+    "name": "Ranunculus",
+    "color": "pink",
+    "mood": "thoughtful",
+    "image": "https://images.homedepot-static.com/productImages/27802920-91ed-48c3-9075-28b42e8aa92d/svn/van-zyverden-flower-bulbs-11291-64_1000.jpg",
+    "season": ["February", "March", "April", "May"],
+    "id": "2"
+  }]
+}
