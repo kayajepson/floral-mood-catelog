@@ -1,0 +1,33 @@
+<h3>Add New Flower to Inventory</h3>
+<div>
+  <div>
+    <label>Flower Name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Flower color:</label>
+    <br>
+    <input #newColor>
+  </div>
+
+  <div>
+    <label>Flower season:</label>
+    <br>
+    <input placeholder="for example: June, July, August" #newSeason>
+  </div>
+
+  <div>
+    <label>Flower mood:</label>
+    <br>
+    <input #newMood>
+  </div>
+
+  <div>
+    <label>Flower image link:</label>
+    <br>
+    <input #newImageLink>
+  </div>
+  <button (click)="submitForm(newName.value, newColor.value, newMood.value, newImageLink.value, newSeason.value); newName.value=''; newColor.value=''; newSeason.value=''; newMood.value=''; newImageLink.value=''">Add</button>
+</div>

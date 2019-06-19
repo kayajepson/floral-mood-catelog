@@ -23,7 +23,7 @@ export class FlowerListComponent implements OnInit {
 
 
   goToDetailPage(clickedFlower: Flower) {
-    this.router.navigate(['details', clickedFlower.id])
+    this.router.navigate(['details', clickedFlower.$key])
   }
 
 }

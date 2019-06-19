@@ -8,19 +8,19 @@ export class FlowerService {
   flowers: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
-    this.flowers = database.list('albums');
+    this.flowers = database.list('flowers');
   }
 
   getFlowers() {
     return this.flowers;
   }
 
+  addFlower(newFlower: Album) {
+    this.flowers.push(newFlower);
+  }
+
   getFlowerById(flowerId: number) {
-    for (let i = 0; i < FLOWERS.length - 1; i++){
-        if (FLOWERS[i].id === flowerId) {
-          return FLOWERS[i];
-        }
-    }
+    return this.database.object('flowers/' + flowerId);
   }
 
 }

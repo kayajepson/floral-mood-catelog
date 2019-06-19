@@ -1,4 +1,4 @@
-<h4>{{flowerToDisplay.name}}</h4>
-<h4>{{flowerToDisplay.color}}</h4>
-<h4>{{flowerToDisplay.season}}</h4>
-<h4>{{flowerToDisplay.mood}}</h4>
+<h4>{{(flowerToDisplay | async)?.name}}</h4>
+<h4>{{(flowerToDisplay | async)?.color}}</h4>
+<h4>{{(flowerToDisplay | async)?.season}}</h4>
+<h4>{{(flowerToDisplay | async)?.mood}}</h4>
