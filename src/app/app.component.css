@@ -1,55 +1,8 @@
 .splash {
   background-image: url('../assets/background.jpg');
-  background-position: fixed;
-  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-}
-
-#logo {
-  height: auto;
-  width: 100%;
-  margin-left: 5%;
-}
-
-#whats {
-  height: auto;
-  width: 50%;
-  margin-left: 25%;
-  margin-bottom: -80px;
-}
-
-#your {
-  height: auto;
-  width: 50%;
-  margin-left: 25%;
-  margin-bottom: -70px;
-}
-
-#mood {
-  height: auto;
-  width: 50%;
-  margin-left: 25%;
-  margin-bottom: -50px;
-}
-
-#q {
-  height: auto;
-  width: 15%;
-  margin-left: 40%;
-}
-
-#words {
-  height: auto;
-  width: 75%;
-  align-self: center;
-  /* background-color: rgba(255, 255, 255, 0.5); */
-}
-
-#options {
-  margin-top: 50px;
-  border: 10px solid white;
-  height: 50vh;
-  margin-bottom: 50px;
+  background-size: cover;
+  height: 40vh;
 }

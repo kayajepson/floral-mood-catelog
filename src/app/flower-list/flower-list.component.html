@@ -1,3 +1,19 @@
-<p>
-  flower-list works!
-</p>
+<div class="list container">
+  <div *ngFor="let flower of flowers">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{flower.image}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{flower.name}}<i class="material-icons right"></i></span>
+        <p><a (click)="goToDetailPage(flower)">See Details</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{flower.name}}<i class="material-icons right">close</i></span>
+        <p>Color: <em>{{flower.color}}</em></p>
+        <p>Mood: <em>{{flower.mood}}</em></p>
+        <p>Season: <span *ngFor="let season of flower.season"><em>{{season}}, </em></span></p>
+      </div>
+    </div>
+  </div>
+</div>
