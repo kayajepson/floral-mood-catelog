@@ -11,4 +11,12 @@ export class FlowerService {
     return FLOWERS;
   }
 
+  getFlowerById(flowerId: number) {
+    for (let i = 0; i < FLOWERS.length - 1; i++){
+        if (FLOWERS[i].id === flowerId) {
+          return FLOWERS[i];
+        }
+    }
+  }
+
 }
